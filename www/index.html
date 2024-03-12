@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ADISE: Ludo Game</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ludo.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js\ludo.js" type="module"></script>
+</head>
+<body>
+    <div id="ludo_title">
+        <img src="images/LOGO.png" alt="logo" id="title_image">
+    </div>
+    <div id="container" style="width: 80em;">
+        <div id="ludo_board" style="float: left;"></div>
+        <div id="game_modes" style="float: right; height: 50em;">
+            <div id="selectors">
+                <label id="label1" for="username">Type username:</label>
+                <input id="username">
+                <p>Select color:</p>
+                <div id="colour-selection">
+                    <input type="radio" id="color-R" name="colour" value="R">
+                    <label for="color-R" style="color: red;">Red</label><br>
+                
+                    <input type="radio" id="color-B" name="colour" value="B">
+                    <label for="color-B" style="color: blue;">Blue</label><br>
+                
+                </div>
+                <div id="login-div" style="border-top: 2em solid white">
+                    <button id="ludo_login" class="btn btn-primary">Submit</button><br>
+                </div>
+                
+            </div>
+            <div id="game_info" style="height: 8em; width: 25em;"></div>
+            <!-- <div id="ludo_reset">
+                <button id="start_button" onclick="start()" class="btn btn-primary">START</button><br>
+            </div> -->
+            <div id="dice" style="border: 1em;">
+                <button id="rollDice">Roll Dice</button>
+                <p id="result"></p>
+                <div id="Notmove_div">
+                    Δεν έφερες 6, παίζει ο επόμενος; 
+                </div>
+                <div id="move_div">
+                    Εφερες 6, ξανα ρίξε το ζαρι να μετακινηθεις. 
+                </div>
+                <div id="move_div2">
+                    Ποιό πιόνι θές να μετακινηθεί; 
+                </div>
+                <div id="yesno">
+                    <p>Θέλεις να βγάλεις νέο πιόνι?
+                    </p>
+                    <input type="radio" id="yes" name="yesno" value="yes" class="yesno-option">
+                    <label for="yes">Yes</label><br>
+                
+                    <input type="radio" id="no" name="yesno" value="no" class="yesno-option">
+                    <label for="no">No</label><br>
+                
+                </div>
+            </div>
+            <div id="resul">
+                <label>You won!</label><br>
+            </div>
+            
+            <button id="resetButton" style="position: absolute; bottom: 2em; background-color: red; color: white;">Reset</button>
+        </div>
+        
+    </div>
+    
+    
+    
+</body>
+</html>

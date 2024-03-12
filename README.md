@@ -1,7 +1,5 @@
-# Ludo
-A simple Ludo game implementation using PHP 
-
 # ΠΑΧΝΙΔΙ ΓΚΡΗΝΙΑΡΗΣ ΣΕ PHP
+_Φοιτητής: it175127_
 
 link : ~/public_html/ADISE23_gkriniaris127/www
 
